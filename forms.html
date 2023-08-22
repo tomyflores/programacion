@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+</head>
+<body>
+
+    <header>
+        <img src="IMAGES/UCEMA_Logo_Caja.jpg" alt="logo ucema">
+        <h1>REGISTRO PARA EL CLUB DE EMPRENDEDORES DE UCEMA</h1>
+    </header>
+    <hr>
+    <hr>
+    <main>
+        <section>
+            <div>
+                <h1>VOS TAMBIEN PODES FORMAR PARTE DEL CLUB</h1>
+                <h3>Estas a pocos pasos de ser uno mas de nosotros!</h3>
+                <p>Completa el siguiente formulario de postulacion:</p>
+            </div>
+            <div>
+                <form action="mailto:tommygonzalezflores@gmail.com">
+                    <fieldset>
+                        <legend>INFORMACION PERSONAL</legend>
+                        <div>
+                            <label for="fullname">Nombre y apellido</label>
+                            <input type="text" id="fullname" name="fullname" placeholder="Tomas Flores" required>
+                        </div>
+
+                        <br>
+
+                        <div>
+                            <label for="email">Email (UCEMA)</label>
+                            <input type="email" id="email" name="email" placeholder="tigonzalez25@ucema.com" required>
+                        </div>
+
+                        <br>
+
+                        
+                        <div>
+                            <label for="telefono">Telefono</label>
+                            <input type="tel" name="telephone" id="telefono" maxlength="12" minlength="8" placeholder="1140442324">
+                        </div>
+
+                        <br>
+
+                        <div>
+                            <label for="age">Edad</label>
+                            <input type="number" min="18" max="80" id="age" name="age" step="0.5" required>
+                        </div>
+
+                        <br>
+
+                        <div>
+                            <label for="carrera">Carrera o especialidad</label>
+                            <select name="carrera" id="carrera">
+                                <option value="" selected>SELECCIONE UNA OPCION</option>
+                                <option value="nd">Negocios digitales</option>
+                                <option value="fin">Finanzas</option>
+                                <option value="adm">Administracion de empresas</option>
+                                <option value="cont">Contador</option>
+                                <option value="anneg">Analitica de negocios</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+
+                    <br>
+
+
+                    <fieldset>
+                        <legend>SOBRE TU EMPRENDIMIENTO</legend>
+
+                        <div>
+                            <p>¿Tienes un emprendimiento en marcha?</p>
+                            <input type="radio" name="opcion" id="si">
+                            <label for="si">Si</label>
+                            <input type="radio" name="opcion" id="no">
+                            <label for="no">No</label>
+                        </div>
+
+                        <br>
+
+                        <div>
+                            <label for="emprendimiento">Nombre del emprendimiento (Si usted no tiene uno, deje el espacio vacio)</label>
+                            <input type="text" id="emprendimiento" name="emprendimiento" placeholder="OPCIONAL">
+                        </div>
+
+                        <br>
+
+                        <div>
+                            <label for="logo">Subir tu logo (OPCIONAL)</label>
+                            <input type="file" id="logo" name="logo">
+                        </div>
+
+                        <br>
+
+                        <div>
+                            <label for="description">Descripcion del emprendimiento (Si usted no tiene uno, deje el espacio vacio)</label>
+                            <textarea name="description" id="description" cols="30" rows="1" placeholder="OPCIONAL" maxlength="500"></textarea>
+                        </div>
+
+                        <br>
+
+                        <div>
+                            <label for="launching-date">Fecha y hora de lanzamiento o evento importante</label>
+                            <input type="datetime-local" name="launching-date" id="launching-date">
+                        </div>
+                    </fieldset>
+
+                    <br>
+
+                    <fieldset>
+                    <legend>PARTICIPACION EN EL CLUB</legend>
+                    <div>
+                        <p>¿Te gustaría dar una charla o taller?</p>
+                        <input type="radio" name="charla" id="yes">
+                        <label for="yes">Si</label>
+                        <input type="radio" name="charla" id="non">
+                        <label for="non">No</label>
+                    </div>
+
+                    <div>
+                        <p>Temas de interes</p>
+                        <input type="checkbox" id="int-fin" value="fin" name="interest">
+                        <label for="int-fin">Financiacion</label>
+                        <input type="checkbox" id="int-mkt" value="mkt" name="interest">
+                        <label for="int-mkt">Marketing digital</label>
+                        <input type="checkbox" id="int-estneg" value="estneg" name="interest">
+                        <label for="int-estneg">Estrategia de negocios</label>
+                        <input type="checkbox" id="int-tecno" value="tecno" name="interest">
+                        <label for="int-tecno">Tecnologia</label>
+                        <input type="checkbox" id="int-otros" value="otros" name="interest">
+                        <label for="int-otros">Otros</label>
+                    </div>
+                    </fieldset>
+
+                    <br>
+
+                    <fieldset>
+                    <legend>DISPONIBILIDAD</legend>
+                    <p>Días de la semana que prefieres para las reuniones </p>
+                        <input type="checkbox" id="sem-lun" value="lun" name="days">
+                        <label for="sem-lun">Lunes</label>
+                        <input type="checkbox" id="sem-mar" value="mar" name="days">
+                        <label for="sem-mar">Martes</label>
+                        <input type="checkbox" id="sem-mier" value="mier" name="days">
+                        <label for="sem-mier">Miercoles</label>
+                        <input type="checkbox" id="sem-jue" value="jue" name="days">
+                        <label for="sem-jue">Jueves</label>
+                        <input type="checkbox" id="sem-vie" value="vie" name="days">
+                        <label for="sem-vie">Viernes</label>
+                        <input type="checkbox" id="sem-sab" value="sab" name="days">
+                        <label for="sem-sab">Sabado</label>
+                        <input type="checkbox" id="sem-dom" value="dom" name="days">
+                        <label for="sem-dom">Domingo</label>
+
+                    <div>
+                        <p>Horario preferido</p>
+                        <input type="radio" name="horario" id="morning">
+                        <label for="morning">Mañana</label>
+                        <input type="radio" name="horario" id="afternoon">
+                        <label for="afternoon">Tarde</label>
+                        <input type="radio" name="horario" id="night">
+                        <label for="night">Noche</label>
+                    </div>
+                    </fieldset>
+                
+                    <br>
+
+                    <fieldset>
+                    <legend>EXTRA</legend>
+
+                    <div>
+                    <label for="comments">Comentarios y sugerencias</label>
+                    <textarea name="description" id="description" cols="30" rows="1" placeholder="AYUDANOS A MEJORAR" maxlength="2000"></textarea>
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <p>¿Cómo te enteraste del club?</p>
+                        <input type="checkbox" id="meet-fam" value="fam" name="meet">
+                        <label for="meet-fam">Familia</label>
+                        <input type="checkbox" id="meet-fr" value="fr" name="meet">
+                        <label for="meet-fr">Amigos</label>
+                        <input type="checkbox" id="meet-rrss" value="rrss" name="meet">
+                        <label for="meet-rrss">Redes sociales</label>
+                        <input type="checkbox" id="meet-foll" value="foll" name="meet">
+                        <label for="meet-foll">Folletos</label>
+                        <input type="checkbox" id="meet-mail" value="mail" name="meet">
+                        <label for="meet-mail">Via Mail</label>
+                        <input type="checkbox" id="meet-otros" value="otros" name="meet">
+                        <label for="meet-otros">Otros</label>
+                    </div>
+                    </fieldset>
+                    <br>
+                    <button type="submit">Enviar formulario</button>
+                    <button type="reset">Borrar formulario</button>
+
+                </form>
+            </div>
+        </section>
+    </main>
+<br><hr><hr>
+    <footer>
+        <p>2023</p>
+        <nav>        
+            <a href="https://ucema.edu.ar/">Menu principal UCEMA</a>    
+        </nav>
+      </footer>  
+</body>
+</html> 
